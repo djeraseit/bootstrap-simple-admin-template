@@ -168,12 +168,20 @@
                                     <div class="col-md-6">
                                         <p class="text-muted">General settings such as, site title, site description, address and so on.</p>
                                         <div class="form-group">
-                                            <label for="site-title" class="form-control-label">Site Title</label>
-                                            <input type="text" name="site_title" class="form-control">
+                                            <label for="application-title" class="form-control-label">Application Title</label>
+                                            <input type="text" name="application_title" class="form-control" value="Call_Log">
                                         </div>
                                         <div class="form-group">
-                                            <label for="site-description" class="form-control-label">Site Description</label>
-                                            <textarea class="form-control" name="site_description"></textarea>
+                                            <label for="phone-number" class="form-control-label">Phone Number</label>
+                                            <input type="text" name="phone_number" class="form-control" value="7136331642">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="license-code" class="form-control-label">License Code</label>
+                                            <input type="text" name="license_code" class="form-control" value="abc">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="application-description" class="form-control-label">Application Description</label>
+                                            <textarea class="form-control" name="application_description"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label">Site Logo</label>
@@ -190,6 +198,46 @@
                                                 <label class="custom-file-label">Choose File</label>
                                             </div>
                                             <small class="text-muted">The image must have a maximum size of 1MB</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label">Whitelist Names</label>
+                                            <div class="custom-file">
+                                                <input type="file" name="whitelist_names" class="custom-file-input">
+                                                <label class="custom-file-label">Choose File</label>
+                                            </div>
+                                            <small class="text-muted">Purchase a whitelist</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label">Whitelist Numbers</label>
+                                            <div class="custom-file">
+                                                <input type="file" name="whitelist_numbers" class="custom-file-input">
+                                                <label class="custom-file-label">Choose File</label>
+                                            </div>
+                                            <small class="text-muted">Purchase or upload existing whitelist</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label">Blacklist Names</label>
+                                            <div class="custom-file">
+                                                <input type="file" name="blacklist_names" class="custom-file-input">
+                                                <label class="custom-file-label">Choose File</label>
+                                            </div>
+                                            <small class="text-muted">Purchase or upload existing blacklist</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label">Blacklist Numbers</label>
+                                            <div class="custom-file">
+                                                <input type="file" name="blacklist_numbers" class="custom-file-input">
+                                                <label class="custom-file-label">Choose File</label>
+                                            </div>
+                                            <small class="text-muted">Purchase or upload existing blacklist</small>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-control-label">Phonebook</label>
+                                            <div class="custom-file">
+                                                <input type="file" name="phonebook" class="custom-file-input">
+                                                <label class="custom-file-label">Choose File</label>
+                                            </div>
+                                            <small class="text-muted">Purchase or upload phonebook</small>
                                         </div>
                                         <div class="form-group">
                                             <label class="form-control-label">Google Analytics Code</label>
