@@ -731,9 +731,9 @@
                                             <input type="text" name="" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label for="" class="form-control-label">Proxy Security</label>
+                                            <label for="" class="form-control-label">Proxy Authentication</label>
                                             <select name="" class="form-control">
-                                                <option value="">Select SMTP Security</option>
+                                                <option value="">Select Proxy Security</option>
                                                 <option value="">TLS</option>
                                                 <option value="">SSL</option>
                                                 <option value="">None</option>
@@ -757,11 +757,11 @@
                                         <p class="text-muted">Email SMTP settings, notifications and others related to email.</p>
                                         <div class="form-group">
                                             <label for="" class="form-control-label">Protocol</label>
-                                            <select name="" class="form-control">
+                                            <select name="smtpprotocol" class="form-control">
                                                 <option value="">Select Protocol</option>
-                                                <option value="">SMTP</option>
-                                                <option value="">Sendmail</option>
-                                                <option value="">PHP Mailer</option>
+                                                <option value="smtp">SMTP</option>
+                                                <option value="sendmail">Sendmail</option>
+                                                <option value="phpmailer">PHP Mailer</option>
                                             </select>
                                         </div>
                                         <div class="form-group">
