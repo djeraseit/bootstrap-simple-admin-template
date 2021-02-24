@@ -154,6 +154,9 @@
                                     <a class="nav-link" id="system-tab" data-toggle="tab" href="#system" role="tab" aria-controls="system" aria-selected="false">System</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" id="proxy-tab" data-toggle="tab" href="#proxy" role="tab" aria-controls="proxy" aria-selected="false">Proxy</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" id="email-tab" data-toggle="tab" href="#email" role="tab" aria-controls="email" aria-selected="false">Email</a>
                                 </li>
                                 <li class="nav-item">
@@ -701,6 +704,48 @@
                                         <div class="form-group">
                                             <label class="form-control-label">IP Restriction</label>
                                             <textarea class="form-control" name="" rows="3" placeholder="Enter IP addresses, if more than one add comma after each IP address"></textarea>
+                                        </div>
+                                        <div class="form-group text-right">
+                                            <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="proxy" role="tabpanel" aria-labelledby="proxy-tab">
+                                    <div class="col-md-6">
+                                        <p class="text-muted">Proxy settings.</p>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">Protocol</label>
+                                            <select name="proxytype" class="form-control">
+                                                <option value="">Select Protocol</option>
+                                                <option value="socks5">Socks5</option>
+                                                <option value="http">Http</option>
+                                                <option value="https">Https</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">Proxy Host</label>
+                                            <input type="text" name="proxyhost" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">Proxy Port</label>
+                                            <input type="text" name="" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">Proxy Security</label>
+                                            <select name="" class="form-control">
+                                                <option value="">Select SMTP Security</option>
+                                                <option value="">TLS</option>
+                                                <option value="">SSL</option>
+                                                <option value="">None</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">Proxy Username</label>
+                                            <input type="text" name="" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">Proxy Password</label>
+                                            <input type="password" name="" class="form-control">
                                         </div>
                                         <div class="form-group text-right">
                                             <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
