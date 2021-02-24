@@ -5,13 +5,16 @@ var dataSet = $.getJSON("phone_history.json", function(json) {
     // return json;
 });
 */
+/*
 fetch("./phone_history.json")
 .then(response => {
    return response.json();
 })
 .then(data => console.log(data));
+*/
 
 // Initiate datatables in roles, tables, users page
+/*
 $('#dataTables-callhistory').DataTable({
     responsive: true,
     pageLength: 20,
@@ -28,8 +31,9 @@ $('#dataTables-callhistory').DataTable({
         {title: "Events"}
             ]
 });
-
+*/
 // Initiate datatables in roles, tables, users page
+
 $('#dataTables-example').DataTable({
     responsive: true,
     pageLength: 20,
