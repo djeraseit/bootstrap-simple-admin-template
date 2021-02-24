@@ -42,7 +42,7 @@ var myChart1 = new Chart(chart1, {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'Sales volume'
+                    labelString: 'Call volume'
                 }
             }]
         }
@@ -125,10 +125,10 @@ var myChart3 = new Chart(chart3, {
 var myChart4 = new Chart(chart4, {
     type: 'doughnut',
     data: {
-        labels: ["Married", "Single", "Widowed", "Legaly Separated", "Anulled"],
+        labels: ["Landline", "VoIP", "Mobile"],
         datasets: [{
-            data: ["60", "45", "6", "3", "11"],
-            backgroundColor: ["#F44336", "#2196F3", "#795548", "#6da252", "#f39c12", "#009688", "#673AB7"],
+            data: ["60", "45", "6"],
+            backgroundColor: ["#F44336", "#2196F3", "#795548"],
         }]
     },
     options: {
@@ -157,13 +157,13 @@ var myChart5 = new Chart(chart5, {
     data: {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [{
-            label: 'Income',
+            label: 'Residential',
             backgroundColor: "rgba(0, 150, 136, .5)",
             borderColor: "rgb(0, 150, 136)",
             borderWidth: 1,
             data: ["20", "30", "40", "50", "60", "70", "80"],
         }, {
-            label: 'Liabilites',
+            label: 'Commercial',
             backgroundColor: "rgba(76, 175, 80, .5)",
             borderColor: "rgba(76, 175, 80)",
             borderWidth: 1,
@@ -203,7 +203,7 @@ var myChart5 = new Chart(chart5, {
 var mychart6 = new Chart(chart6, {
     type: 'radar',
     data: {
-        labels: ['Age 18-24', 'Age 25-31', 'Age 32-38', 'Age 39-45', 'Age 46-100+'],
+        labels: ['Collectors', 'Real Estate', 'Sales', 'Survey', 'Healthcare'],
         datasets: [{
             label: '',
             backgroundColor: "rgba(48, 164, 255, 0.2)",
@@ -217,7 +217,7 @@ var mychart6 = new Chart(chart6, {
     },
     options: {
         legend: { position: 'top', display: false, },
-        title: { display: true, text: 'Age Groups' },
+        title: { display: true, text: 'Categories' },
         scale: { ticks: { beginAtZero: true } }
     }
 });
