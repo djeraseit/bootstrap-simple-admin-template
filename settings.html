@@ -766,28 +766,28 @@
                                         </div>
                                         <div class="form-group">
                                             <label for="" class="form-control-label">SMTP Host</label>
-                                            <input type="text" name="" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Username</label>
-                                            <input type="text" name="" class="form-control">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="" class="form-control-label">SMTP Security</label>
-                                            <select name="" class="form-control">
-                                                <option value="">Select SMTP Security</option>
-                                                <option value="">TLS</option>
-                                                <option value="">SSL</option>
-                                                <option value="">None</option>
-                                            </select>
+                                            <input type="text" name="smtphost" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="" class="form-control-label">SMTP Port</label>
-                                            <input type="text" name="" class="form-control">
+                                            <input type="text" name="smtpport" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">SMTP Security</label>
+                                            <select name="smtpsecurity" class="form-control">
+                                                <option value="">Select SMTP Security</option>
+                                                <option value="tls">TLS</option>
+                                                <option value="ssl">SSL</option>
+                                                <option value="none">None</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="" class="form-control-label">SMTP Username</label>
+                                            <input type="text" name="smtpusername" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label for="" class="form-control-label">SMTP Password</label>
-                                            <input type="password" name="" class="form-control">
+                                            <input type="text" name="smtppassword" class="form-control">
                                         </div>
                                         <div class="form-group text-right">
                                             <button class="btn btn-success" type="submit"><i class="fas fa-check"></i> Save</button>
