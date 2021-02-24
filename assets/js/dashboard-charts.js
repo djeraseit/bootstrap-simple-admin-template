@@ -6,7 +6,8 @@
 * Website: https://github.com/alexis-luna/bootstrap-simple-admin-template
 -------------------------------------------------------------------*/
 var trafficchart = document.getElementById("trafficflow");
-var saleschart = document.getElementById("sales");
+//var saleschart = document.getElementById("sales");
+var monthlycallschart = document.getElementById("monthlycalls");
 
 var myChart1 = new Chart(trafficchart, {
     type: 'line',
@@ -44,7 +45,7 @@ var myChart1 = new Chart(trafficchart, {
         }
     }
 });
-
+/*
 var myChart2 = new Chart(saleschart, {
     type: 'bar',
     data: {
@@ -76,6 +77,50 @@ var myChart2 = new Chart(saleschart, {
                 scaleLabel: {
                     display: true,
                     labelString: 'Number of Sales'
+                }
+            }]
+        }
+    }
+});
+*/
+
+var myChart2 = new Chart(monthlycallschart, {
+    type: 'bar',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: 'Blocked',
+            backgroundColor: "rgba(0, 150, 136, .5)",
+            borderColor: "rgb(0, 150, 136)",
+            borderWidth: 1,
+            data: ["20", "30", "40", "50", "60", "70", "80"],
+        }, {
+            label: 'Valid',
+            backgroundColor: "rgba(76, 175, 80, .5)",
+            borderColor: "rgba(76, 175, 80)",
+            borderWidth: 1,
+            data: ["2", "5", "15", "25", "35", "25", "15"],
+        }]
+    },
+    options: {
+        responsive: true,
+        title: { display: false, text: 'Chart' },
+        legend: { position: 'top', display: true, },
+        tooltips: { mode: 'index', intersect: false, },
+        hover: { mode: 'nearest', intersect: true },
+        scales: {
+            xAxes: [{
+                stacked: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Months'
+                }
+            }],
+            yAxes: [{
+                stacked: true,
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Volume'
                 }
             }]
         }
