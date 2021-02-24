@@ -12,11 +12,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Blank Page | Bootstrap Simple Admin Template</title>
+    <title>All Devices | Call_Log</title>
     <link href="assets/vendor/fontawesome/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/solid.min.css" rel="stylesheet">
     <link href="assets/vendor/fontawesome/css/brands.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/datatables/datatables.min.css" rel="stylesheet">
     <link href="assets/css/master.css" rel="stylesheet">
 </head>
 
@@ -140,29 +141,50 @@
                 </div>
             </nav>
             <div class="content">
-                <div class="container-fluid">
+                <div class="container">
                     <div class="page-title">
-                        <h3>Call Details</h3>
+                        <h3>All Devices
+                            <a href="roles.html" class="btn btn-sm btn-outline-primary float-right"><i class="fas fa-user-shield"></i> Add Device</a>
+                        </h3>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="card">
-                                <h5 class="card-header">{{CallerName}} - {{CallerNumber}}</h5>
-                                <div class="card-body">
-                                    <h5 class="card-title">{{spamRisk}}</h5>
-                                    <p class="card-text">Caller Details Table</p>
-                                    <button type="button" class="btn btn-primary">Add to Phonebook</button>
-                                    <button type="button" class="btn btn-secondary">Add to Whitelist</button>
-                                    <button type="button" class="btn btn-success">Add to Blacklist</button>
-                                    <button type="button" class="btn btn-danger">Remove from Phonebook</button>
-                                    <button type="button" class="btn btn-warning">Update Spam Score</button>
-                                    <button type="button" class="btn btn-info">Lookup Address</button>
-                                    <button type="button" class="btn btn-light">Lookup Company</button>
-                                    <button type="button" class="btn btn-dark">Send to Mobile Phone</button>
-                                    <button type="button" class="btn btn-link">Add to Global Blacklist</button>
-                                    <a href="#" class="btn btn-primary">Add to phonebook/whitelist/blacklist</a>
-                                </div>
-                            </div>
+                    <div class="box box-primary">
+                        <div class="box-body">
+                            <table width="100%" class="table table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Hostname/IP</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
+                                        <th>Model</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Philip Chaney</td>
+                                        <td>philip.chaney@gmail.com</td>
+                                        <td>Manager</td>
+                                        <td>Admin</td>
+                                        <td>Active</td>
+                                        <td class="text-right">
+                                            <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                                            <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jose Rodriguez</td>
+                                        <td>jose.rodz@gmail.com</td>
+                                        <td>Author</td>
+                                        <td>Staff</td>
+                                        <td>Active</td>
+                                        <td class="text-right">
+                                            <a href="" class="btn btn-outline-info btn-rounded"><i class="fas fa-pen"></i></a>
+                                            <a href="" class="btn btn-outline-danger btn-rounded"><i class="fas fa-trash"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -171,6 +193,8 @@
     </div>
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/datatables/datatables.min.js"></script>
+    <script src="assets/js/initiate-datatables.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
